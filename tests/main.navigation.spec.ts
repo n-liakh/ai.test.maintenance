@@ -9,8 +9,6 @@ test.describe('Main page navigation', () => {
 
     await mainPage.goto();
 
-    await page.waitForTimeout(2000);
-
     await expect(mainPage.nav).toBeVisible();
     await expect(mainPage.docsLink).toBeVisible();
     await expect(mainPage.apiLink).toBeVisible();
