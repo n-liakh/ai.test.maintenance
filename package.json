@@ -1,0 +1,13 @@
+{
+  "name": "ai-test-maintenance",
+  "version": "1.0.0",
+  "description": "Playwright tests using Page Object Model pattern",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest"
+  }
+}
