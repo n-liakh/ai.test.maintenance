@@ -23,7 +23,7 @@ test.describe('Main page navigation links', () => {
     });
 
     await test.step('Assert nav landmark and link accessibility', async () => {
-      await mainPage.assertNavAccessibility();
+      await mainPage.assertNavAccessibility(NAV_LINKS.map(n => n.label));
     });
 
     for (const { label, href } of NAV_LINKS) {

@@ -10,13 +10,13 @@ test.describe('Playwright.dev – Getting Started', () => {
 
     await expect(playwrightDev.tocList).toHaveText([
       'How to install Playwright',
-      "What's Installed",
+      "What's installed",
       'How to run the example test',
       'How to open the HTML test report',
-      'Write tests using web first assertions, page fixtures and locators',
-      'Run single test, multiple tests, headed mode',
+      'Write tests using web-first assertions, fixtures and locators',
+      'Run single or multiple tests; headed mode',
       'Generate tests with Codegen',
-      'See a trace of your tests',
+      'View a trace of your tests',
     ]);
   });
 
