@@ -15,3 +15,33 @@ test.describe('Main page navigation', () => {
     await expect(mainPage.communityLink).toBeVisible();
   });
 });
+
+test.describe('Main page navigation', () => {
+  test('The main page should display navigation buttons: Docs, API, Community', async ({
+    page,
+  }) => {
+    const mainPage = new MainPage(page);
+
+    await mainPage.goto();
+
+    await expect(mainPage.nav).toBeVisible();
+    await expect(mainPage.docsLink).toBeVisible();
+    await expect(mainPage.apiLink).toBeVisible();
+    await expect(mainPage.communityLink).toBeVisible();
+  });
+});
+
+test.describe('Main page navigation', () => {
+  test('The main page should display navigation buttons: Docs, API, Community', async ({
+    page,
+  }) => {
+    const mainPage = new MainPage(page);
+
+    await mainPage.goto();
+
+    await expect(mainPage.nav).toBeVisible();
+    await expect(mainPage.docsLink).toBeVisible();
+    await expect(mainPage.apiLink).toBeVisible();
+    await expect(mainPage.communityLink).toBeVisible();
+  });
+});

@@ -10,14 +10,14 @@ export class MainPage {
   constructor(page: Page) {
     this.page = page;
     this.nav = page.getByRole('navigation', { name: 'Main' });
-    this.docsLink = this.nav.getByRole('link', { name: 'Docs' });
+    this.docsLink = this.nav.getByRole('link', { name: 'Docsss' });
     this.apiLink = this.nav.getByRole('link', { name: 'API' });
     this.communityLink = this.nav.getByRole('link', { name: 'Community' });
   }
 
   async goto() {
     await this.page.goto('/');
-    await expect(this.page).toHaveTitle(/Playwright/);
+    await expect(this.page).toHaveTitle(/PlaywrightIncorrectTitle/);
   }
 
   /**
